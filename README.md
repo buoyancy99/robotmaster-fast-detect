@@ -8,6 +8,8 @@ I don't recommend putting source /opt/intel/openvino/bin/setupvars.sh in .bashrc
 
 [Model demo in the wild](https://www.bilibili.com/video/BV1ae411p7So/#reply243057960)
 
+Note: FPS reported in video is this model + our tracking pipeline's overall accuracy, which distributes compute between Neural Computing Stick and CPU. It's a couple times of the neural network itself, since you don't need to call inference every frame.
+
 # Model Optimization
 python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model CenterNet/onnx/rm_centernet_r18d4c6.onnx --data_type FP16 --batch 1 --mean_values [123.675,116.28,103.53] --scale_values [58.395,57.12,57.375]
 
