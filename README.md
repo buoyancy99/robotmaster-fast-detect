@@ -1,5 +1,5 @@
 # Installation
-Dowload, Install OpenVINO 2020.2 and finish all setup & GPU setup in document
+Dowload, Install OpenVINO 2020.2 and finish all setup & GPU setup in document. Require Intel GPU or Intel Neural Compute Stick
 I don't recommend putting source /opt/intel/openvino/bin/setupvars.sh in .bashrc
 
 
@@ -22,4 +22,8 @@ python3 Inference/openvino_inference
 
 # Paper
 https://arxiv.org/pdf/1904.07850.pdf
+https://arxiv.org/abs/2012.07177
+
+# About data
+You can find how we generated data in GenData. We only collected ~360 robot images from different angles. 
 
